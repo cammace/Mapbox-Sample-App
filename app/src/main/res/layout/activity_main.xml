@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    tools:context="com.mycompany.myfirstglapp.MainActivity"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/map_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <com.mapbox.mapboxsdk.views.MapView
+        android:id="@+id/mapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        mapbox:access_token="@string/accessToken"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/myLocationButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp"
+            android:src="@android:drawable/ic_menu_mylocation" />
+
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>

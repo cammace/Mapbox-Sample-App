@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">My First Gl App</string>
+    <string name="accessToken">pk.eyJ1IjoiY2FtbWFjZSIsImEiOiI5OGQxZjRmZGQ2YjU3Mzk1YjJmZTQ5ZDY2MTg1NDJiOCJ9.hIFoCKGAGOwQkKyVPvrxvQ</string>
+
+    <string name="loading_route">Loading Route</string>
+    <string name="origin">Origin</string>
+    <string name="destination">Destination</string>
+    <string name="error_getting_route">Error occurred getting route</string>
+    <string name="error_finding_location">Cannot find your location</string>
+
+    <string name="search_hint">Search</string>
+</resources>

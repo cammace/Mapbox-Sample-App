@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/directions_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="126dp"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <LinearLayout
+            android:paddingTop="36dp"
+            android:paddingBottom="16dp"
+            android:paddingStart="24dp"
+            android:paddingLeft="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/route_time"
+                android:textSize="34sp"
+                android:textColor="#FFF"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/route_distance"
+                android:textSize="20sp"
+                android:textColor="#FFF"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:id="@+id/turn_by_turn_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="126dp"
+        android:background="?attr/colorAccent"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:visibility="invisible"
+        android:clickable="true">
+
+        </View>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/begin_direction_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/directions_toolbar"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="-28dp"
+        android:src="@drawable/ic_done_24dp"
+        android:clickable="true"
+        app:borderWidth="0dp"
+        app:elevation="12dp"
+        app:pressedTranslationZ="12dp"
+        app:fabSize="normal"
+        />
+
+    <com.mapbox.mapboxsdk.views.MapView
+        android:id="@+id/mapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/directions_toolbar"
+        mapbox:access_token="@string/accessToken"/>
+
+</RelativeLayout>
