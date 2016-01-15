@@ -26,4 +26,4 @@ Haven't had time to implement permissions like your suppose to yet
 <img src="https://github.com/cammace/Mapbox-Sample-App/blob/master/Screenshots/phone/navigation_mode.png?raw=true" width="360">
 <img src="https://github.com/cammace/Mapbox-Sample-App/blob/master/Screenshots/phone/infowindow.png?raw=true" width="360">
 <img src="https://github.com/cammace/Mapbox-Sample-App/blob/master/Screenshots/phone/map.png?raw=true" width="360">
-<img src="https://github.com/cammace/Mapbox-Sample-App/blob/master/Screenshots/phone/route1.png?raw=true">
+<img src="https://github.com/cammace/Mapbox-Sample-App/blob/master/Screenshots/phone/route1.png?raw=true" width="360">
